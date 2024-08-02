@@ -166,10 +166,25 @@ if (boo3 == 4) {
     console.log("hey I'm number 4!");
 };
 
-//If Else Structure
-let amHungry = true;
+/*
+!THESE ARE THE ONLY FALSY VALUES
+- false
+- 0
+- -0
+- 0n
+- ""
+- '' (empty strings)
+- null
+- undefined
+- Nan
 
-if(!amHungry) {
+*/
+
+
+//If Else Structure
+let amHungry = "";
+
+if(amHungry) {
     console.log("lets's eat! I want Chicken Nuggets"); 
 } else {
     console.log("Lets's keep coding! Yay!!!");
@@ -202,3 +217,110 @@ switch (amHungry == true) {
     default:
         console.log("I just wanna eat to eat!")
 }
+
+//!CONDITION PROBLEMS
+
+//! Favorite Fruit Checker
+//TODO Define a variable of favorite fruits
+//? SET array favFruit = [];
+let favFruits = ["grapes", "apples", "cantelope", "strawberries", "pomegranite"]
+
+//TODO Define a variable for the fruit to check
+//? Set string checker = ""
+let checker = "";
+
+//* Check if the fruit is in the array and output the result
+
+if (checker == favFruits[0] || checker == favFruits[1] || checker == favFruits[2] || checker == favFruits[3] || checker == favFruits[4]) {
+    console.log(`This is my favorite fruit!.`)
+} else {
+    console.log(`This is not my favorite fruit.`);
+};
+
+//!Grade Categorizer
+//TODO Define a variable for the grade
+debugger
+let mygrade = "1";
+
+//TODO Categorize the grade
+let grade = ["A", "B", "C", "D", "F"]
+    
+//* output the result
+if (mygrade >= 90 && mygrade <= 100) {
+    console.log(`Awesome I made an ${grade[0]}`)
+
+} else if (mygrade <= 89 && mygrade >= 80) {
+    console.log(`That good that I made a ${grade[1]} on my test`)
+} else if (mygrade <= 79 && mygrade >= 70) {
+    console.log("I'm glad that I at least passed with a " + grade[2])
+} else {
+    console.log("I failed the test smh.")
+}
+
+
+//! Day of the Week Checker
+//TODO Define an array of days of the week
+//? SET array weekDays = []
+let weekDays = ["monday", "tuesday", "wednesday", "thursday", "friday"];
+let weekEnds = ["saturday", "sunday"]
+
+//TODO Define a variable for the day to check
+//? SET string day "monday";
+let dayChecker = "saturday";
+
+//TODO Check if the day is a weekday or weekend
+//? IF statement?
+//? Conditions: 
+//? -  Day of a week
+//? -  weekends: "saturday" || "sunday"
+//? - weekdays: "monday" || "tuesday"|| "wednesday || "thursday" || "friday"
+//* output the result
+
+if (dayChecker == weekDays[0] || dayChecker == weekDays[1] || dayChecker == weekDays[2] || dayChecker == weekDays[3] || dayChecker == weekDays[4]) {
+    console.log("i can't wait til the weekend!")
+} else {
+    console.log("Thank God it's the weekend")
+}
+
+//* Switch Case
+debugger
+switch(dayChecker) {
+    case weekEnds[0]:
+        console.log("It's the weekend");
+        break;
+    case weekDays[1]:
+        console.log("It's the weekday");
+        break;
+    default:
+        console.log("This day doesnt exist.");
+};
+
+//! Temperature Checker
+//TODO Define a variable for the temperature
+let farenheit = "0";
+
+//TODO Categorize the temperature
+//* output the result
+
+if (farenheit >= 90) {
+    console.log("Its really hot outside")
+} else if (farenheit >= 75 && farenheit <= 89) {
+    console.log("Its feel pretty good outside today?")
+} else if (farenheit <= 74 && farenheit >= 65) {
+    console.log("its a little chilly outside today")
+} else {
+    console.log("Its really really freezing outside")
+};
+
+//! Number Sign Checker
+//TODO Define a variable for the number
+let num = "4";
+//TODO Check the sign of the number
+//* ouput the result
+if (num > 0) {
+    console.log("This is a positive number")
+} else {
+    console.log("This is a negative number")
+};
+
+
